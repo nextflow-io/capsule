@@ -73,14 +73,6 @@ public abstract class FlexibleClassLoader extends ClassLoader {
     }
 
     @Override
-    public Enumeration<URL> getResources(String name) throws IOException {
-        Enumeration[] tmp = new Enumeration[2];
-        tmp[childFirst ? 1 : 0] = super.getResources(name);
-        tmp[childFirst ? 0 : 1] = findResources1(name);
-        return new sun.misc.CompoundEnumeration<URL>(tmp);
-    }
-
-    @Override
     protected Class<?> findClass(String name) throws ClassNotFoundException {
         Class<?> clazz = findLoadedClass(name);
         if (clazz == null) {
