@@ -10,8 +10,8 @@
 package co.paralleluniverse.common;
 
 import static co.paralleluniverse.common.Exceptions.rethrow;
-import com.sun.nio.zipfs.ZipFileSystem;
-import com.sun.nio.zipfs.ZipFileSystemProvider;
+//import com.sun.nio.zipfs.ZipFileSystem;
+//import com.sun.nio.zipfs.ZipFileSystemProvider;
 import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.nio.file.FileSystem;
